@@ -1,0 +1,9 @@
+<svg id="Food-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="43.194" height="47.994" viewBox="0 0 43.194 47.994">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.652" y1="1" x2="0" y2="0.087" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#116c5b"/>
+      <stop offset="1" stop-color="#11d1ad"/>
+    </linearGradient>
+  </defs>
+  <path id="icon-menu" d="M72.538,65.9h-4.8V49.1h-4.8V65.9h-4.8V49.1h-4.8V65.9a9.565,9.565,0,0,0,9,9.525V97.094h6V75.423a9.565,9.565,0,0,0,9-9.525V49.1h-4.8Zm12-7.2V77.908h6V97.094h6V49.1c-6.627,0-12,5.377-12,9.621Z" transform="translate(-53.34 -49.1)" fill="url(#linear-gradient)"/>
+</svg>
