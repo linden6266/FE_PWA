@@ -1,0 +1,11 @@
+# Use node image for development
+FROM node:18
+
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+
+# Expose ports for hot reload
+EXPOSE 8080
+CMD ["npm", "run", "serve"]

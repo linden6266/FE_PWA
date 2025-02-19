@@ -3,17 +3,18 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --mode development --live-reload --config webpack.dev.js",
-    "build": "webpack --mode production",
-    "preview": "vite preview",
+    "build": "webpack --mode production --config webpack.dev.js",
     "test:unit": "vitest",
-    "prepare": "cypress install",
     "test:e2e": "start-server-and-test preview http://localhost:4173 'cypress run --e2e'",
-    "test:e2e:dev": "start-server-and-test 'vite dev --port 4173' http://localhost:4173 'cypress open --e2e'",
     "build-only": "vite build",
+    "dev": "webpack-dev-server --mode development --live-reload --config webpack.dev.js",
+    "prepare": "cypress install",
+    "preview": "vite preview",
+    "test:e2e:dev": "start-server-and-test 'vite dev --port 4173' http://localhost:4173 'cypress open --e2e'",
     "type-check": "vue-tsc --build"
   },
   "dependencies": {
+    "register-service-worker": "^1.7.2",
     "vue-router": "^4.5.0",
     "workbox-webpack-plugin": "^7.3.0"
   },
@@ -24,7 +25,7 @@
     "@types/jsdom": "^21.1.7",
     "@types/node": "^22.13.4",
     "@vitejs/plugin-vue": "^5.2.1",
-    "@vue/cli-plugin-pwa": "^5.0.8",
+    "@vue/cli-plugin-pwa": "~5.0.0",
     "@vue/compiler-sfc": "^3.5.13",
     "@vue/test-utils": "^2.4.6",
     "@vue/tsconfig": "^0.7.0",
